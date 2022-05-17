@@ -1,5 +1,6 @@
 # Test Pulumi + Prisma
 
 ```sh
-DATABASE_URL="..." yarn pulumi up
+# Note: Because the error happens before anything is executed, you don't actually need a running database
+DATABASE_URL="mongodb+srv://user:password@localhost/default?retryWrites=true&w=majority" yarn pulumi up
 ```
